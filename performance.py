@@ -16,7 +16,7 @@ url = 'http://pra5.eba-ujxy8kkb.us-east-2.elasticbeanstalk.com/predict'
 results = []
 
 for test_case in test_cases:
-    for _ in range(25):  # Run each test case 25 times
+    for _ in range(100):  # Run each test case 100 times
         start_time = time.time()
         response = requests.post(url, json=test_case)
         end_time = time.time()
